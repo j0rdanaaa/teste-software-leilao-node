@@ -1,27 +1,15 @@
-# teste-software-leilao-node
+## Cobertura de Testes
 
-Aplicação para a aula prática de construção de testes de unidade e de integração usando o Jest para o Node.js
+Para executar os testes e gerar o relatório de cobertura:
 
-## Pastas e Arquivos
+```bash
+npm test -- --coverage
+```
 
-Dentro da pasta **src** você encontrará os arquivos **user.js** e **auction.js**, estes arquivos são os arquivos da aplicação. Além deles, você encontrará o arquivo **app.js**, este arquivo demonstra a utilização dos outros dois.
+Na execução dos testes de unidade e de integração da aplicação, foram obtidos:
 
-Na pasta **tests* você terá duas subpastas, uma é onde você irá criar os arquivos de teste de unidade e na outra você criará os testes de integração
-
-## Rodando a aplicação
-
-Clone o repositório
-
-```npm install```
-
-```node src/app.js```
-
-## Rodando testes
-
-O arquivo **package.json** já está configurado para rodar o jest com a opção de coverage, para tal, use o comando:
-
-```npm test``` 
-
-Caso queira rodar apenas testes de unidade ou apenas teste de integração, você precisará passar isso como parametro para o npm test, por exemplo:
-
-```npm test -- tests/unit```
+- **3 suítes de testes aprovadas**
+- **12 testes aprovados**
+- **90,16% de cobertura de statements**
+- **69,23% de cobertura de branches**
+- **100% de cobertura de functions**
