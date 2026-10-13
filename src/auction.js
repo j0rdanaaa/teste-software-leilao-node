@@ -2,8 +2,6 @@ const db = require('./db');
 const { AuctionDAO } = require('./auctionDAO');
 const auctionDAO = new AuctionDAO(db);
 
-var auctionName = 'Leilão';
-
 
 function createAuction(auction){
     return auctionDAO.createAuction(auction);
